@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Statistika</title>
+  </head>
+  <body>
+
+    <div class="row mt-5 mb-5 justify-content-center">
+      <div class="col-10 col-md-7 rounded border-top border-5 border-primary p-3 shadow">
+        <h2>Statistic Calculator</h2>
+        <div class="mb-2 w-100">
+          <label for="floatingInput">Input data</label>
+          <input type="text" class="form-control form-control-sm" id="input" placeholder="1,2,3,4,5">
+          <div id="errMsg" class="text-danger d-none">
+            input angka salah, contoh 1,4,5,3-7,5,2
+          </div>
+        </div>
+        <div class="mb-3">
+          <button class="btn btn-sm btn-primary" id="calculate">Calculate</button>
+        </div>
+        <div class="mb-3">
+          <span id="result_urut"></span>
+          <table class="table table-bordered">
+            <thead class="bg-primary text-white">
+              <tr>
+                <td>Keterangan</td>
+                <td>Hasil</td>
+              </tr>
+            </thead>
+            <tr class="">
+              <td style="background-color: #efefef;">n</td>
+              <td class="text-end" id="result_n">0</td>
+            </tr>
+            <tr>
+              <td style="background-color: #efefef;">jumlah (sum)</td>
+              <td class="text-end" id="result_jumlah">0</td>
+            </tr>
+            <tr>
+              <td style="background-color: #efefef;">rata-rata</td>
+              <td class="text-end" id="result_avg">0</td>
+            </tr>
+            <tr>
+              <td style="background-color: #efefef;">modus</td>
+              <td class="text-end" id="result_modus">0</td>
+            </tr>
+            <tr>
+              <td style="background-color: #efefef;">nilai terkecil</td>
+              <td class="text-end" id="result_min">0</td>
+            </tr>
+            <tr>
+              <td style="background-color: #efefef;">nilai terbesar</td>
+              <td class="text-end" id="result_max">0</td>
+            </tr>
+            <tr>
+              <td style="background-color: #efefef;">jangkauan</td>
+              <td class="text-end" id="result_jangkauan">0</td>
+            </tr>
+            <tr>
+              <td style="background-color: #efefef;">Q1</td>
+              <td class="text-end" id="result_q1">0</td>
+            </tr>
+            <tr>
+              <td style="background-color: #efefef;">Q2 (median)</td>
+              <td class="text-end" id="result_q2">0</td>
+            </tr>
+            <tr>
+              <td style="background-color: #efefef;">Q3</td>
+              <td class="text-end" id="result_q3">0</td>
+            </tr>
+            <tr>
+              <td style="background-color: #efefef;">Simpangan Rata Rata (SR)</td>
+              <td class="text-end" id="result_sr">0</td>
+            </tr>
+            <tr>
+              <td style="background-color: #efefef;">Simpangan Baku (SB)</td>
+              <td class="text-end" id="result_sb">0</td>
+            </tr>
+            <tr>
+              <td style="background-color: #efefef;">Variansi (V)</td>
+              <td class="text-end" id="result_v">0</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
